@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Days</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <center>
+        <h2 class="bg-info p-2 m-2" style="width: 600px; border: 1px solid lightblue; border-radius: 20px;">Find
+            Saturday and Sunday bitween Days</h2>
+    </center>
+
+    <div class="container bg-link m-5" style="border: 0.1px solid blue; border-radius: 10px;">
+
+        <div class="row" style="width: 1540px;">
+            <div class="col-4">
+                From:<input type="date" class="form-control" id="date1" />
+            </div>
+
+            <div class="col-4">
+                To:<input type="date" class="form-control" id="date2"><br>
+            </div>
+
+            <div class="col-2 mt-3">
+                <button class="btn btn-info m-2" onclick="saturday()" id="btn1">Count</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="output" class="container m-5" style="border: 0.1px solid blue; border-radius: 10px; padding: 20px;">
+        <div style="font-size: 18px;">
+            <div class="">Number of Saturdays:<span id="out1" style="padding-left: 340px;"></span></div>
+        </div>
+        <div style="font-size: 18px;">
+            <div class="" >Number of Sundays:<span id="out2" style="padding-left: 350px;"></span></div>
+        </div>
+    </div>
+
+        <!-- <div class="container bg-link m-5" style="border: 0.1px solid blue; border-radius: 10px;">
+            Number of Saturday:<input type="text"  class="bg-link">
+            Number of Sunday:<input type="text"  class="bg-link">
+        </div> -->
+    
+    <script src="/js/calDate.js"></script>
+</body>
+
+</html>
